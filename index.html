@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Admin Dashboard | Redesign</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="navigation">
+			<ul>
+				<li>
+					<a href="#">
+						<span class="icon"><ion-icon name="logo-apple"></ion-icon></span>
+						<span class="title" style="font-size: 1.5em;font-weight: 500;">RestoFinder</span>
+					</a>
+				</li>
+				<!-- <li class="hovered">
+					<a href="#">
+						<span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+						<span class="title">Dashboard</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="icon"><ion-icon name="people-outline"></ion-icon></span>
+						<span class="title">Customers</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="icon"><ion-icon name="chatbubble-outline"></ion-icon></span>
+						<span class="title">Message</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="icon"><ion-icon name="help-outline"></ion-icon></span>
+						<span class="title">Help</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="icon"><ion-icon name="settings-outline"></ion-icon></span>
+						<span class="title">Settings</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+						<span class="title">Password</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
+						<span class="title">Sign Out</span>
+					</a>
+				</li> -->
+			</ul>
+		</div>
+
+		<!-- main -->
+		<div class="main">
+			<div class="topbar">
+				<div class="toggle">
+					<ion-icon name="menu-outline"></ion-icon>
+				</div>
+				<!-- search -->
+				<div class="search">
+					<label>
+						<input type="text" placeholder="Search here">
+						<ion-icon name="search-outline"></ion-icon>
+					</label>
+				</div>
+				<!-- userImg -->
+				<div class="user">
+					<img src="user.jpg">
+				</div>
+			</div>
+
+			<br>
+
+			<h1 style="text-align: center;">Documentation du projet <em style="color: #FF7F00;">"RestoFinder"</em>
+			</h1>
+
+
+			<!-- Add Charts -->
+			<div class="graphBox">
+				<div class="box">
+					<h3>
+						Objectif du projet
+					</h3>
+					<br>
+					<p>
+						L'application <em style="color: #FF7F00;">"RestoFinder"</em> a pour but de permettre aux utilisateurs de consulter une liste de restaurants à proximité et de commander des plats à emporter. Les principales fonctionnalités de l'application incluent :
+					</p>
+					<br>
+						<ul>
+							<li>Afficher la liste des restaurants à proximité</li>
+							<li>Afficher les détails d'un restaurant (nom, adresse, horaires, menu, etc.)
+							</li>
+							<li>
+								Ajouter des plats au panier et passer une commande
+							</li>
+						</ul>
+				</div>
+				<div class="box">
+					<h3>Fonctionnalités principales
+					</h3>
+					<br>
+					<ol>
+						<li>	<b>Affichage des restaurants à proximité :</b> L'application utilise Geolocator pour obtenir la position actuelle de l'utilisateur et récupère les restaurants dans un rayon de 5 km via l'API.
+					</li>
+					<li><b>Détails des restaurants :</b> En cliquant sur un restaurant dans la liste, l'utilisateur peut accéder à une page avec les détails complets du restaurant : adresse, description, horaires, menu, etc.
+					</li>
+					<li><b>Gestion du panier :</b> L'utilisateur peut ajouter des plats à son panier, et passer une commande.</li>
+
+					</ol>
+				</div>
+			</div>
+
+			<br>
+			<h2 style="text-align: center; color: #FF7F00;">Développement</h2>
+
+			<br>
+
+			<div class="details">
+				<!-- order details list -->
+				<div class="recentOrders">
+					<div class="cardHeader">
+						<h2>Technologies et Dépendances
+						</h2>
+						<a href="#" class="btn">View All</a>
+					</div>
+					<table><br>
+<tr>						<h4>Dépendances principales
+</h4></tr>
+						<thead>
+							<tr>
+								<td>Dépendances</td>
+								<td>Version </td>
+								<td>Description</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>flutter</td>
+								<td>-</td>
+								<td>Le SDK Flutter permet de créer l'application pour les plateformes Android et iOS.</td>
+							</tr>
+							<tr>
+								<td>cupertino_icons</td>
+								<td>^1.0.8</td>
+								<td>Bibliothèque pour les icônes iOS.</td>
+							</tr>
+							<tr>
+								<td>http</td>
+								<td>^1.2.2</td>
+								<td>Permet d'effectuer des requêtes HTTP pour interagir avec l'API externe.</td>
+							</tr>
+							<tr>
+								<td>geolocator</td>
+								<td>^13.0.2</td>
+								<td>Pour obtenir la localisation de l'utilisateur et récupérer les restaurants proches.</td>
+							</tr>
+							<tr>
+								<td>google_maps_flutter</td>
+								<td>^2.10.0</td>
+								<td>Affichage de cartes Google Maps et gestion de la géolocalisation.</td>
+							</tr>
+							<tr>
+								<td>lottie</td>
+								<td>^3.3.0</td>
+								<td>Pour ajouter des animations Lottie à l'application.</td>
+							</tr>
+							<tr>
+								<td>provider</td>
+								<td>^6.1.2</td>
+								<td>Utilisé pour la gestion de l'état de l'application.</td>
+							</tr>
+							<tr>
+								<td>dio</td>
+								<td>^5.7.0</td>
+								<td>Bibliothèque HTTP performante pour les appels API.</td>
+							</tr>
+							<tr>
+								<td>dartz</td>
+								<td>^0.10.1</td>
+								<td>Fournit des structures de données fonctionnelles comme les options et les résultats.</td>
+							</tr>
+							<tr>
+								<td>flutter_bloc</td>
+								<td>^8.1.6</td>
+								<td>Implémente le modèle BLoC pour la gestion de l'état.</td>
+							</tr>
+							<tr>
+								<td>equatable</td>
+								<td>^2.0.7</td>
+								<td>Permet de comparer des objets Dart.</td>
+							</tr>
+							<tr>
+								<td>get_it</td>
+								<td>^8.0.3</td>
+								<td>Utilisé pour l'injection de dépendances dans l'application.</td>
+							</tr>
+							<tr>
+								<td>intl</td>
+								<td>^0.20.1</td>
+								<td>Fournit des outils pour le formatage des dates et des heures.</td>
+							</tr>
+							<tr>
+								<td>floor</td>
+								<td>^1.5.0</td>
+								<td>Permet de gérer une base de données SQLite dans l'application.</td>
+							</tr>
+							<tr>
+								<td>flutter_hooks</td>
+								<td>^0.20.5</td>
+								<td>Permet de simplifier l'utilisation des hooks dans Flutter.</td>
+							</tr>
+							<tr>
+								<td>cached_network_image</td>
+								<td>^3.4.1</td>
+								<td>Permet de mettre en cache les images téléchargées depuis le réseau.</td>
+							</tr>
+							<tr>
+								<td>retrofit</td>
+								<td>^4.4.1</td>
+								<td>Utilisé pour effectuer des appels API avec une approche déclarative.</td>
+							</tr>
+							<tr>
+								<td>json_annotation</td>
+								<td>^4.9.0</td>
+								<td>Utilisé pour la sérialisation des données JSON.</td>
+							</tr>
+						</tbody>
+
+						<tbody>
+							<th>
+<td></td>
+<td>
+	<h4>Dépendances de développement
+	</h4>
+</td>
+<td></td>
+								</th>
+							<tr>
+								<td>flutter_test</td>
+								<td>-</td>
+								<td>Fournit des outils pour effectuer des tests unitaires et d'intégration dans Flutter.</td>
+							</tr>
+							<tr>
+								<td>flutter_lints</td>
+								<td>^5.0.0</td>
+								<td>Contient un ensemble de règles de linting pour encourager les bonnes pratiques de codage.</td>
+							</tr>
+							<tr>
+								<td>retrofit_generator</td>
+								<td>^9.1.5</td>
+								<td>Génère le code nécessaire pour utiliser Retrofit avec les API RESTful dans Flutter.</td>
+							</tr>
+							<tr>
+								<td>floor_generator</td>
+								<td>^1.5.0</td>
+								<td>Génère le code pour la gestion de la base de données SQLite avec Floor.</td>
+							</tr>
+							<tr>
+								<td>build_runner</td>
+								<td>^2.4.14</td>
+								<td>Utilisé pour générer des fichiers de code à l'aide d'annotations (par exemple, pour Retrofit et Floor).</td>
+							</tr>
+							<tr>
+								<td>json_serializable</td>
+								<td>^6.9.0</td>
+								<td>Génère le code pour la sérialisation/désérialisation des objets JSON.</td>
+							</tr>
+						</tbody>
+						
+						
+					</table>
+				</div>
+
+				<!-- New Customers -->
+				<div class="recentCustomers">
+					<div class="cardHeader">
+						<h2>Bonnes pratiques et Design</h2>
+					</div>
+					<br>
+					<ul>
+						<li><b>Design responsive : </b>L'application s'adapte à différents écrans, en tenant compte des guidelines iOS et Android.</li>
+						<li><b>Utilisation de widgets modernes : </b>Utilisation de ListView, SliverList, Hero pour une navigation fluide et moderne.</li>
+						<li><b>Animations et transitions :</b> L'utilisation de Lottie permet d'ajouter des animations attractives et de maintenir une expérience utilisateur fluide.</li>
+					</ul>
+
+				</div>
+
+
+			</div>
+
+			<div class="details">
+				<div class="recentOrders">
+					<br><br>
+					<div class="cardHeader">
+
+						<h2>Architecture - Clean Architecture</h2>
+					</div>
+					<br>
+<p>L'application Flutter utilise une architecture propre, connue sous le nom de <strong style="color: #FF7F00;">Clean Architecture</strong>, qui sépare clairement les préoccupations en plusieurs couches indépendantes et bien définies. Cette approche vise à rendre le code plus testable, maintenable et évolutif, tout en favorisant la séparation des responsabilités.</p>
+<br>
+<h3 style="color: #FF7F00;">Structure des Couches</h3>
+<br>
+<ul>
+    <li><strong>Domain Layer (Couche Domaine) :</strong> 
+        <p>Cette couche contient la logique métier de l'application. Elle est indépendante de toute bibliothèque ou technologie spécifique et ne dépend d'aucune autre couche. Elle inclut les entités, les cas d’utilisation (use cases) et les interfaces des repositories.</p>
+    </li>
+    <li><strong>Data Layer (Couche Données) :</strong> 
+        <p>Cette couche est responsable de la gestion des données. Elle contient les implémentations des repositories, des sources de données (API, bases de données locales, etc.) et la sérialisation des données. Cette couche est dépendante de la couche Domaine et fait appel à ses interfaces pour l'accès aux données.</p>
+    </li>
+    <li><strong>Presentation Layer (Couche Présentation) :</strong> 
+        <p>La couche présentation gère l'interface utilisateur (UI). Elle contient les widgets, les contrôleurs d'état (State Management), et les ViewModels qui sont responsables de la logique de présentation. Cette couche dépend des cas d'utilisation du domaine et interagit avec la couche Data pour afficher les données.</p>
+    </li>
+    <li><strong>Dependency Injection (Injection de Dépendances) :</strong> 
+        <p>Un service d'injection de dépendances est utilisé pour fournir les objets nécessaires à chaque couche, en s'assurant que les dépendances sont correctement instanciées et injectées dans les classes appropriées.</p>
+    </li>
+</ul>
+<br>
+<h3 style="color: #FF7F00;">Avantages de Clean Architecture</h3>
+<br>
+<ul>
+    <li><strong>Testabilité :</strong> Chaque couche est isolée et indépendante des autres, ce qui facilite les tests unitaires et l'intégration.</li>
+    <li><strong>Indépendance des technologies :</strong> Les détails de l'implémentation (par exemple, le framework Flutter, la base de données) sont isolés, permettant de remplacer ou de modifier ces technologies sans affecter le reste de l'application.</li>
+    <li><strong>Évolutivité :</strong> Le code peut être facilement étendu avec de nouvelles fonctionnalités ou modifié sans perturber l'ensemble du système.</li>
+    <li><strong>Maintenance facilitée :</strong> Le code est organisé de manière à ce que les modifications dans une couche n'affectent pas les autres couches, réduisant ainsi le risque de régressions.</li>
+</ul>
+
+<br>
+<h3 style="color: #FF7F00;">Utilisation du Package <code>get_it</code> pour l'Injection de Dépendances</h3>
+<br>
+<p>Dans cette application, le package <code>get_it</code> est utilisé pour gérer l'injection de dépendances. Il permet de décorréler les différentes couches et de garantir que chaque classe obtient ses dépendances sans les créer directement. Cela améliore la flexibilité et facilite les tests.</p>
+
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+	
+	<script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
+	<script src="my_chart.js"></script>
+	<script>
+		// MenuToggle
+		let toggle = document.querySelector('.toggle');
+		let navigation = document.querySelector('.navigation');
+		let main = document.querySelector('.main');
+
+		toggle.onclick = function(){
+			navigation.classList.toggle('active');
+			main.classList.toggle('active');
+		}
+
+		// add hovered class in selected list item
+		let list = document.querySelectorAll('.navigation li');
+		function activeLink(){
+			list.forEach((item) =>
+			item.classList.remove('hovered'));
+			this.classList.add('hovered');
+		}
+		list.forEach((item) => 
+		item.addEventListener('mouseover',activeLink));
+	</script>
+</body>
+</html>
